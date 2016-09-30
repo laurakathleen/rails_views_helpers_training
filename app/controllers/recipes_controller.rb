@@ -53,7 +53,8 @@ class RecipesController < ApplicationController
       @recipe.destroy
       flash[:notice] = "Successfully deleted recipe."
     end
-    redirect_to "/users/#{current_user.id}"
+    # redirect_to "/users/#{current_user.id}"
+    redirect_to recipes_path
   end
 
   private
