@@ -1,6 +1,6 @@
 <h1>Edit Recipe</h1>
 <hr>
-<form action="/recipes/2" method="post">
+<form action="/recipes/<%= @recipe.id %>" method="post">
   <input type="hidden" name="_method" value="patch">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <div class="form-group">
